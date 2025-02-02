@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quieres ser mi San Valentín?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        h1 {
+            color: #e91e63;
+        }
+        img {
+            width: 200px;
+            margin-bottom: 20px;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #si {
+            background-color: #4caf50;
+            color: white;
+        }
+        #no {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://via.placeholder.com/200" alt="Corazón de San Valentín">
+    <h1>¿Quieres ser mi San Valentín?</h1>
+    <div class="buttons">
+        <button id="si">Sí</button>
+        <button id="no">No</button>
+    </div>
+
+    <script>
+        document.getElementById('si').addEventListener('click', function() {
+            alert('¡Gracias! Eres el/la mejor. 💖');
+        });
+
+        document.getElementById('no').addEventListener('click', function() {
+            alert('😢 Bueno, lo seguiré intentando...');
+        });
+    </script>
+</body>
+</html>
